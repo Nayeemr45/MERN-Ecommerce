@@ -1,9 +1,9 @@
 import React from 'react';
-import NavScreen from '../../screens/NavScreen';
+import PRODUCT_CAROSOL from '../Product_carosol'
 
 const Home = () => {
     return (
-        <NavScreen />
+        <PRODUCT_CAROSOL />
     )
 }
 

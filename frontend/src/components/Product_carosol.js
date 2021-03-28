@@ -1,6 +1,5 @@
 import React from 'react'
 import { Container, Carousel , Image } from 'react-bootstrap';
-import image1 from '../asset/Images/i3.jpg'
 import image2 from '../asset/Images/i4.jpg'
 import image3 from '../asset/Images/i5.jpg'
 const Product_carosol = () => {

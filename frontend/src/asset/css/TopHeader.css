@@ -19,3 +19,11 @@ li{
 .login-btn{
     cursor: pointer !important;
 }
+
+.after-login{
+    display: flex;
+}
+
+.logout-btn{
+    cursor: pointer;
+}

@@ -11,14 +11,14 @@ import { Container, Row, Col, Navbar, Nav, NavDropdown } from 'react-bootstrap';
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto mr-auto">
-                            <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#link">Product</Nav.Link>
+                            <Nav.Link href="/">Home</Nav.Link>
+                            <Nav.Link href="/product">Product</Nav.Link>
                             <NavDropdown title="Shop" id="basic-nav-dropdown" >
                                 <NavDropdown.Item href="#action/3.1">Cart</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Checkout</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="#home">Service</Nav.Link>
-                            <Nav.Link href="#link">ContactUs</Nav.Link>
+                            <Nav.Link href="/service">Service</Nav.Link>
+                            <Nav.Link href="/Contactus">ContactUs</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
