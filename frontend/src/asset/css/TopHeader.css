@@ -1,0 +1,21 @@
+.top-header{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(90px,1fr));
+    grid-template-rows: 40px;
+    justify-content: center;
+    align-content: center;
+}
+.top-header-left{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.top-header-right{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+li{
+    list-style: none;
+}
+.login-btn{
+    cursor: pointer !important;
+}

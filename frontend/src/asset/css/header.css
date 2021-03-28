@@ -1,0 +1,29 @@
+
+.icon-search{
+    color: #fff !important;
+}
+.btn-search{
+    font-size: 24px !important;
+    background-color: #333 !important;
+}
+.form-control{
+    padding: 26px 24px !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.input-group:not(.has-validation)>.form-control:not(:last-child){
+    font-size: 15px !important;
+
+}
+#input-group-dropdown-1{
+    font-size: 15px !important;
+    color: #000 !important;
+}
+
+#input-group-dropdown-1:hover{
+    background-color: #fff !important;
+}
+#input-group-dropdown-1{
+    background-color: #fff !important;
+
+}
