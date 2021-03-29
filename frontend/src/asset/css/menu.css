@@ -5,13 +5,19 @@
     color: #fff !important;
     padding: 0 !important;
 }
-.nav-link{
+.nav-link {
     color: #fff !important;
     margin-right: 20px !important;
     font-family: 'Poppins', sans-serif !important;
     font-size: 18px !important;
     font-weight: 500;
     padding: 1rem 1rem !important;
+    text-decoration: none !important;
+}
+.nav-link a{
+    color: #fff !important;
+    margin-right: 20px !important;
+    text-decoration: none !important;
 }
 .nav-link:hover{
     color: rgb(0, 0, 0) !important;

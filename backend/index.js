@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import productRoutes from './routes/product.js';
 import userRoutes from './routes/users.js';
+import sellerRoutes from './routes/sellers.js';
 
 const app = express();
 
@@ -14,6 +15,7 @@ app.use(cors());
 
 //app.use('/' , producttRoutes);
 app.use('/user' , userRoutes);
+app.use('/seller' , sellerRoutes);
 
 
 const CONNECTION_URL = 'mongodb+srv://nayeem:n017710587890%40%23@cluster0.lcdib.mongodb.net/mern_ecommerce';

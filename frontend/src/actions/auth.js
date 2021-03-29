@@ -1,4 +1,4 @@
-import { AUTH } from '../constants/actionTypes';
+import { AUTH , SELLERAUTH } from '../constants/actionTypes';
 import * as api from '../api/index.js';
 
 
@@ -19,6 +19,29 @@ export const signup = (formData, router) => async (dispatch) => {
     const { data } = await api.signUp(formData);
 
     dispatch({ type: AUTH, data });
+
+    router.push('/');
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const sellerSignin = (formData, router) => async (dispatch) => {
+  try {
+    const { data } = await api.sellerSignIn(formData);
+
+    dispatch({ type: SELLERAUTH, data });
+
+    router.push('/');
+  } catch (error) {
+    console.log(error);
+  }
+};
+export const sellerSignup = (formData, router) => async (dispatch) => {
+  try {
+    const { data } = await api.sellerSignUp(formData);
+
+    dispatch({ type: SELLERAUTH, data });
 
     router.push('/');
   } catch (error) {

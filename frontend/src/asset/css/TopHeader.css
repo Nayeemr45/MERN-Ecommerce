@@ -4,6 +4,7 @@
     grid-template-rows: 40px;
     justify-content: center;
     align-content: center;
+    margin-top: 10px;
 }
 .top-header-left{
     display: grid;
@@ -11,7 +12,9 @@
 }
 .top-header-right{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 0.25fr 0.1fr 0.1fr;
+    justify-content: end;
+    text-align: end;
 }
 li{
     list-style: none;
