@@ -16,6 +16,7 @@ app.use(cors());
 //app.use('/' , producttRoutes);
 app.use('/user' , userRoutes);
 app.use('/seller' , sellerRoutes);
+app.use('/product' ,productRoutes);
 
 
 const CONNECTION_URL = 'mongodb+srv://nayeem:n017710587890%40%23@cluster0.lcdib.mongodb.net/mern_ecommerce';

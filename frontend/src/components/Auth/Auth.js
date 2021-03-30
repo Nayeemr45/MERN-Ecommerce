@@ -5,6 +5,7 @@ import '../../asset/css/auth.css'
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { signin, signup } from '../../actions/auth';
+import Menu from '../nav/Menu';
 
 const initialState = { firstName: '', lastName: '', email: '', password: '', confirmPassword: '' };
 
@@ -32,6 +33,7 @@ const Auth = () => {
     //const handleShowPassword = (e) => {}
     return (
         <Container>
+        <Menu />
         {isSignup ? (
             <div className="auth-label">Sign Up</div>
         ) : (

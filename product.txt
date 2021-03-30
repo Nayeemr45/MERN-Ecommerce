@@ -1,0 +1,7 @@
+Seller-
+	1. 
+		i.   Add ( Name, Image, brand, category,  price, description, timestamps, countInStock, user_ID )Product( 9 field )
+		ii.  Update( Name, Image, brand, category,  price, description, timestamps, countInStock ) Product
+		iii. Delete Product
+ 
+	2. Discount( effect on price only )

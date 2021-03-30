@@ -9,7 +9,6 @@ export const signin = async (req , res) => {
     try {
         const existingSeller = await Seller.findOne({ email });
 
-        console.log("🚀 ~ file: seller.js ~ line 11 ~ signin ~ existingSeller", existingSeller)
         
 
         if(!existingSeller) return res.status(404).json({ message: "User doesn't exists." });
