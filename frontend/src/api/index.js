@@ -8,11 +8,10 @@ API.interceptors.request.use((req) => {
     }
     return req;
   });
-  
 
- export const fetchProducts = () => API.get('/product');
+export const fetchProducts = () => API.get('/product');
+export const getProductsDetails = (id) => API.get(`/product/${id}`);
 export const createProduct = (newProduct) => API.post('/product/Add_Product', newProduct);
-//export const likePost = (id) => API.patch(`/posts/${id}/likePost`);
 export const updateProduct = (id, updatedProduct) => API.patch(`/posts/${id}`, updatedProduct);
 export const deleteProduct = (id) => API.delete(`/posts/${id}`);
 

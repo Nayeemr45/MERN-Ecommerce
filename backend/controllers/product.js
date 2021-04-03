@@ -16,6 +16,16 @@ export const getProduct = async (req , res) => {
         res.status(404).json({ message: error.message });
     }
 }
+export const getProductDetails = async (req , res) => {
+    try{
+
+        const AllProduct = await Product.findById(req.params.id);
+
+        res.status(200).json(AllProduct);
+    }catch (error){
+        res.status(404).json({ message: error.message });
+    }
+}
 
 export const createProduct = async (req , res) => {
     const product = req.body;

@@ -6,6 +6,8 @@ import Auth from './components/Auth/Auth';
 import NavScreen from './screens/NavScreen';
 import AuthSeller from './components/Auth/AuthSeller';
 import AddProduct from './components/Product/AddProduct';
+import EditProduct from './components/Product/EditProduct';
+import ProductScreen from './screens/ProductScreen';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         <Route path="/Auth" component={Auth} />
         <Route path="/Seller" component={AuthSeller} />
         <Route path="/Add_Product" component={AddProduct} />
+        <Route path='/product/edit/:id' component={EditProduct} />
+        <Route path='/product/:id' component={ProductScreen} />
       </div>
     </Router>
   );
