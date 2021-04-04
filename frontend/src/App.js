@@ -18,7 +18,7 @@ function App() {
         <Route path="/Auth" component={Auth} />
         <Route path="/Seller" component={AuthSeller} />
         <Route path="/Add_Product" component={AddProduct} />
-        <Route path='/product/edit/:id' component={EditProduct} />
+        <Route path='/seller/edit/product/:id' component={EditProduct} />
         <Route path='/product/:id' component={ProductScreen} />
       </div>
     </Router>

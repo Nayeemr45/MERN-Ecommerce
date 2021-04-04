@@ -29,7 +29,7 @@ const product = ({products}) => {
                     <td>{products.name}</td>
                     <td>{products.price}</td>
                     <td>{products.countInStock}</td>
-                    <td><Button variant="primary" ><Link to={`/product/edit/${products._id}`}>Edit</Link></Button></td>
+                    <td><Button variant="primary" ><Link to={`/seller/edit/product/${products._id}`}>Edit</Link></Button></td>
                     <td><Button variant="primary" >Delete</Button></td>
                     </tr>
                     </tbody>
