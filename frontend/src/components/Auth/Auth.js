@@ -1,21 +1,23 @@
-import React , { useState } from 'react'
+import React , { useState, useEffect } from 'react'
 import { Container, Button } from 'react-bootstrap'
 import Input from './Input'
 import '../../asset/css/auth.css'
-import { useDispatch } from 'react-redux';
-import { useHistory } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 import { signin, signup } from '../../actions/auth';
 import Menu from '../nav/Menu';
 
 const initialState = { firstName: '', lastName: '', email: '', password: '', confirmPassword: '' };
 
-const Auth = () => {
+const Auth = ({ location, history }) => {
     const [isSignup, setIsSignup] = useState(false);
     const [form, setForm] = useState(initialState);
     const dispatch = useDispatch();
-    const history = useHistory();
+    const redirect = location.search ? location.search.split('=')[1] : '/Auth'
+    const userAuth = useSelector((state) => state.auth)
+    const {authData} = userAuth
 
-
+    console.log(userAuth)
+    console.log(authData)
     const switchMode = () => {
     setForm(initialState);
     setIsSignup((prevIsSignup) => !prevIsSignup);
@@ -29,6 +31,14 @@ const Auth = () => {
       dispatch(signin(form, history));
     }
     }
+    useEffect(() => {
+        
+        if (authData) {
+          history.push(redirect)
+        }
+        
+      }, [history, authData, redirect])
+    
     const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
     //const handleShowPassword = (e) => {}
     return (

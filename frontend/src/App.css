@@ -7,6 +7,13 @@
   pointer-events: none;
 }
 
+.checkout-nav{
+  background-color: #282c34 !important;
+  color: aliceblue !important;
+}
+
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

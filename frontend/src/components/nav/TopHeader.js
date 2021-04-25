@@ -79,7 +79,7 @@ const TopHeader = () => {
         )}
         {user?.result ? (
           <div className="after-login">
-            <li>{user?.result.name}</li>
+            <li><Link to="/profile/user">{user?.result.name}</Link></li>
             <li className="logout-btn ml-5" variant="" onClick={logout}>
               Logout
             </li>

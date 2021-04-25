@@ -12,7 +12,7 @@ const product = ({product}) => {
   //const products = useSelector((state) => state.products);
 
   return (
-    <Container className="product-card">
+    <Container>
       {!seller?.result && (
         <Card className='my-3 p-3 rounded'>
       <Link to={`/product/${product._id}`}>
@@ -25,7 +25,7 @@ const product = ({product}) => {
             <strong>{product.name}</strong>
           </Card.Title>
         </Link>
-        <Card.Text as='h3'>${product.price}</Card.Text>
+        <Card.Text as='h3'>৳{product.price}</Card.Text>
       </Card.Body>
     </Card>
       )}

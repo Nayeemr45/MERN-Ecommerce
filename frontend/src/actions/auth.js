@@ -1,4 +1,5 @@
-import { AUTH , SELLERAUTH } from '../constants/actionTypes';
+import { AUTH , SELLERAUTH,
+  LOGOUT } from '../constants/actionTypes';
 import * as api from '../api/index.js';
 
 
@@ -8,11 +9,19 @@ export const signin = (formData, router) => async (dispatch) => {
 
     dispatch({ type: AUTH, data });
 
-    router.push('/');
+    //router.push('/');
   } catch (error) {
     console.log(error);
   }
 };
+export const logout = () => (dispatch) => {
+  localStorage.removeItem('profile')
+  localStorage.removeItem('cartItems')
+  localStorage.removeItem('shippingAddress')
+  localStorage.removeItem('paymentMethod')
+  dispatch({ type: LOGOUT })
+  document.location.href = '/login'
+}
 
 export const signup = (formData, router) => async (dispatch) => {
   try {
