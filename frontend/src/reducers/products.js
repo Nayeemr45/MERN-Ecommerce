@@ -1,6 +1,8 @@
 import {
   FETCH_ALL_PRODUCT,PRODUCT_DETAILS_REQUEST,
   CREATE_PRODUCT,
+  PRODUCT_LIST_REQUEST,
+
   UPDATE_PRODUCT,
   DELETE_PRODUCT,
   PRODUCT_UPDATE_REQUEST,
@@ -10,6 +12,8 @@ import {
 
 export default (products = [], action) => {
   switch (action.type) {
+    case PRODUCT_LIST_REQUEST:
+      return { loading: true, products: [] }  
     case FETCH_ALL_PRODUCT:
       return action.payload;
     case PRODUCT_DETAILS_REQUEST:

@@ -6,13 +6,13 @@ import Auth from './components/Auth/Auth';
 import NavScreen from './screens/NavScreen';
 import AuthSeller from './components/Auth/AuthSeller';
 import AddProduct from './components/Product/AddProduct';
-import EditProduct from './components/Product/EditProduct';
 import ProductScreen from './screens/ProductScreen';
 import CartScreen from './screens/CartScreen';
 import ShippingScreen from './screens/ShippingScreen';
 import PaymentScreen from './screens/PaymentScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import UserProfileScreen from './screens/UserProfileScreen';
+import ProductEditScreen from './screens/EditProductScreen';
 import OrderScreen from './screens/OrderScreen';
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
         <Route path='/product/:id' component={ProductScreen} />
         <Route path="/Add_Product" component={AddProduct} />
         <Route path='/cart/:id?' component={CartScreen} />
-        <Route path='/seller/edit/product/:id' component={EditProduct} />
+        <Route path='/edit/product/:id' component={ProductEditScreen} />
         <Route path="/Seller" component={AuthSeller} />
         <Route path="/Auth" component={Auth} />        
         <Route path="/" component={Home} exact />

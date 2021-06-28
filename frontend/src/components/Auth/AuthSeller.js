@@ -14,6 +14,7 @@ const AuthSeller = () => {
     const [form, setForm] = useState(initialState);
     const dispatch = useDispatch();
     const history = useHistory();
+  const seller = JSON.parse(localStorage.getItem('seller'));
 
 
     const switchMode = () => {
